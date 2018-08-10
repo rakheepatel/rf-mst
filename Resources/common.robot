@@ -2,6 +2,7 @@
 Documentation  This file contains all commonly shared keywords
 Library  SeleniumLibrary
 Library  OperatingSystem
+Library  pabot.PabotLib
 
 *** Variables ***
 ${LOCAL}  file:///Users/ra/robotscripts/rf-mst/index.html  #Change path to match yours

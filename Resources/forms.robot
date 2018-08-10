@@ -1,8 +1,9 @@
 *** Settings ***
 Documentation  This file contains keywords related to Forms
 Library  SeleniumLibrary
+Library  pabot.PabotLib
 
-*** Variable ***
+*** Variables ***
 ${prompt_cat}  Clawy
 
 *** Keywords ***
@@ -22,7 +23,7 @@ Fill Forms
     clear element text  css=[name="prefilled"]
     input text  id=first_name  ${prompt_cat}
     select checkbox  absolutely
-    unselect checkbox  love
+    unselect checkbox  love 
     @{ListItems}=  get list items  //select[@name="Breeds"]
     select from list  //select[@name="Breeds List"]  Norwegian Forest Cat
     ${list_label}=  get selected list label  //select[@name="Breeds List"]

@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation  This file contains keywords related to Alerts
 Library  SeleniumLibrary
+Library  pabot.PabotLib
 
 *** Keywords ***
 Alert Text
