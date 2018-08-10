@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+    <title>Robot Framework Testing Page</title>
+    <meta name="description" content="This sample page is so that I can target my Robot Framework tests at something.">
+    <link rel="stylesheet" href="Assets/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon-16x16.png">
+    <link rel="shortcut icon" href="Assets/favicon.ico">
+</head>
+<!--No one cares about IE-->
+<body class="container">
+    <header><h1 id="h1">Hello Kitteh!</h1></header>
+    <hr />
+    <p>
+        Run in circles <b>meow</b> to be let out purr so <i>if it fits, i sits</i> and brown cats with <a href="https://www.google.com.au/search?q=cat+pink+ears&tbm=isch" id="PinkEars" target="_blank">pink ears</a> or eats owners hair then claws head <q>demand to be let outside at once, and expect owner to wait for me as i think about it.</q>
+    </p>
+    <p id="doggo" style="display:none">I like doggos.</p>
+    <div class="fancy">Instead of drinking water from the cat bowl, make sure to steal water from the toilet jump off balcony, onto stranger's head or i like big cats and i can not lie loves cheeseburgers peer out window, chatter at birds, lure them to mouth and spend all night ensuring people don't sleep sleep all day lick face hiss at owner, pee a lot, and meow repeatedly scratch at fence purrrrrr eat muffins and poutine until owner comes back.</div>
+    <h3>Lists</h3>
+        <ul>
+            <li>Annoy <a href="https://www.google.com.au/search?q=kitten&tbm=isch" id="navlink">kitten</a> brother with poking cat mojo yet see owner</li>
+            <li>run in terror my left donut is missing, as is my right kitty power</li>
+            <li>Cats secretly make all the worlds muffins</li>
+        </ul>
+        <ol>
+            <li>lie on your belly and purr when you are asleep for</li>
+            <li>hide from vacuum cleaner intently stare at the same spot, and eat owner's food</li>
+            <li>Love to play with owner's hair tie</li>
+        </ol>
+    <div>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Breed</th>
+                    <th>Lifespan</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td>Breed Footer</td>
+                    <td>Lifespan Footer</td>
+                </tr>
+            </tfoot>
+            <tr>
+                <td>Exotic Shorthair</td>
+                <td>12-15 yrs</td>
+            </tr>
+            <tr>
+                <td>Persian</td>
+                <td>14-15 yrs</td>
+            </tr>
+            <tr>
+                <td>Maine Coon</td>
+                <td>12-15 yrs</td>
+            </tr>
+            <tr>
+                <td>Ragdoll</td>
+                <td>12-17 yrs</td>
+            </tr>
+            <tr>
+                <td>British Shorthair</td>
+                <td>12-17 yrs</td>
+            </tr>
+            <tr>
+                <td>Norwegian Forest Cat</td>
+                <td>12-16 yrs</td>
+            </tr>
+            <tr>
+                <td>Somali</td>
+                <td>12-16 yrs</td>
+            </tr>
+        </table>
+    </div>
+    <div class="images">
+        <a href="https://www.google.com.au/search?q=cute+cats&tbm=isch" id="CatImage" target="_blank"><img src="Assets/800-650.jpg" alt="Cute cat is cute" title="Cute cat is cute" height="250" style="float:left" /></a>
+    </div>
+    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29614603.330045078!2d115.22091486314143!3d-25.03190600790004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2b2bfd076787c5df%3A0x538267a1955b1352!2sAustralia!5e0!3m2!1sen!2sau!4v1505391712019" width="400" height="250" frameborder="0" style="border:0 float:right"></iframe>
+    <p>
+        <button id="btn-dateTime" type="button" onclick="document.getElementById('dateTime').innerHTML = Date()"> Click me to display Date and Time.</button>
+    </p>
+    <p id="dateTime"></p>
+    <p id="demo"></p>
+    <h2>Forms</h2>
+        <form method="post" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            <fieldset><legend>Personal Information</legend>
+                <p>First name:
+                    <input id="first_name" type="text" name="prefilled" value="Jane-Anne O'Doe" /></p>
+                <p>Random field:
+                    <input type="text" name="emptytext" /></p>
+                <p>Disabled field:
+                    <input type="text" disabled="disabled" value="Paws for a mo"></p>
+                <p>E-mail:
+                    <input type="email" name="email" /></p>
+                <p>No. of cats you have:
+                    <input type="number" name="quantity" min="1" max="5" /></p>
+                <p>Images of your favourite cats:
+                    <input type="file" name="img" multiple /></p>
+                <p>Comments:
+                    <textarea id="message" name="message" rows="10" cols="30" maxlength="50">The cat was playing in the garden.</textarea></p>
+            </fieldset>
+            <fieldset><legend>Cat breed preference</legend>
+            <input type="radio" name="breed" value="Persian" checked> Persian<br>
+            <input type="radio" name="breed" value="Ragdoll"> Ragdoll<br>
+            <input type="radio" name="breed" value="Other"> Other
+            </fieldset>
+            <fieldset><legend>Radio No Selections</legend>
+            <input type="radio" name="no_select" value="Persian"> Siamese<br>
+            <input type="radio" name="no_select" value="Ragdoll"> Bengal<br>
+            <input type="radio" name="no_select" value="Other"> Sphynx <br />
+            </fieldset>
+            <fieldset><legend>Breeds</legend>
+                <select name="Breeds">
+                    <option value="Norwegian Forest Cat">Norwegian Forest Cat</option>
+                    <option value="British Shorthair">British Shorthair</option>
+                    <option value="Maine Coon">Maine Coon</option>
+                    <option value="Other">Other</option>
+                </select>
+                <select name="Breeds List" multiple>
+                    <option value="Norwegian Forest Cat">Norwegian Forest Cat</option>
+                    <option value="British Shorthair">British Shorthair</option>
+                    <option value="Maine Coon">Maine Coon</option>
+                    <option value="Other">Other</option>
+                </select>
+                <br /><input type="checkbox" name="cat1" value="love" checked>I love cats
+                <br /><input type="checkbox" name="cat2" value="absolutely">I absolutely love cats
+            </fieldset>
+            <fieldset><legend>How much do you like cats?</legend>
+            0
+            <input type="range" id="a" name="a" value="50">
+            100 +
+            <input type="number" id="b" name="b" value="50">
+            =
+            <output name="x" for="a b"></output>
+            </fieldset>
+            <p>
+                <input class="button disabled" type="submit" value="Disabled">
+                <input class="button" type="reset" value="Reset">
+                <input class="button" type="submit" value="Submit" />
+            </p>
+            <button class="button" id="singleClick" type="button" onclick="alert('Hehe click bait!')">Click Me!</button>
+            <button class="button" id="dblClick" type="button" ondblclick="alert('Fool me twice!')">Double Click Me!</button>
+        </form>
+        <button class="button" onclick="myFunction()">Prompt</button>
+        <p id="prompt"></p>
+</body>
+<footer>Copyright &copy; Ra
+    <script>
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    </script>
+    <script>
+        function myFunction() {
+            var txt;
+            var cat = prompt("Please enter your cat's name:", "Jenipurr");
+            if (cat == null || cat == "") {
+                txt = "User cancelled the prompt.";
+            } else {
+                txt = "Good " + cat + "! Who's a good kitteh?";
+            }
+            document.getElementById("prompt").innerHTML = txt;
+        }
+    </script>
+</footer>
+</html>
