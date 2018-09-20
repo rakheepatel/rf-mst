@@ -5,7 +5,7 @@ Resource  ../Resources/alerts.robot
 Resource  ../Resources/forms.robot
 Suite Setup  Start Suite
 Suite Teardown  End Suite
-# robot -d Results-Se Tests/selenium.robot
+# robot -d Results-Se Tests/selenium1.robot
 
 *** Test Cases ***
 Sample Test
