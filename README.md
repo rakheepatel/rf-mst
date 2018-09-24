@@ -1,41 +1,60 @@
 # rf-mst
 This repository has been created as demonstration material for Melbourne Software Testing. Using a dummy html page (~/index.html) as a base, we show how a basic Robot Framework test suite would look. This repository is for beginners, so we have tried to keep things as simple as possible.
 
+The repository includes:
+a. Web automation testing using Robot Framework's Selenium Library
+b. API automation testing using Robot Framework's RESTInstance Library 
+c. Mobile automation testing using Robot Framework's Appium Library 
+
 ## Installing Robotframework and Libraries
+
 1. Install Python and PIP
-  1. To install Python
+   - To install Python
       - Go to https://www.python.org/downloads/ and get the latest Python
       - Get the appropriate installer for your OS
       - Run the Installer as administrator
       - Add python to Path either during (windows), or after installation
       - To check the current version of python type `python -V`
-  2. If PIP installation fails, go to https://pip.pypa.io/en/latest/installing/
+    - If PIP installation fails, go to https://pip.pypa.io/en/latest/installing/
 2. Use PIP to install RF
     - `pip install robotframework`
 3. Use PIP to install SL
     - `pip install robotframework-seleniumlibrary`
     - To check the current version of S2L type `pip show robotframework-seleniumlibrary`
     - To check the current version of Selenium type `pip show selenium`
-4. For future API tests
-    - `pip install requests`
-5. For future mobile testing
+4. For API tests
+    - `pip install --upgrade RESTinstance`
+5. For  mobile testing
     - `pip install robotframework-appiumlibrary`
 6. Install browsers required e.g. Chrome, FF, IE11
 7. Install web drivers
-  1. Might be a good idea to create a folder to hold all your web drivers e.g. C:\bin or /Documents/bin
-  2. IE webdriver  (Windows only, obviously)
+   - Might be a good idea to create a folder to hold all your web drivers e.g. C:\bin or /Documents/bin
+   - IE webdriver  (Windows only, obviously)
       - Go to http://selenium-release.storage.googleapis.com/index.html
       - Download the latest driver e.g. IEDriverServer_Win32_2.53.1.zip
-  3. Chrome webdriver
+   - Chrome webdriver
       - Go to http://chromedriver.storage.googleapis.com/index.html
       - Download the latest driver (2.41 or higher)
       - To check the current version of chromedriver type `chromedriver --version`
-  4. Firefox webdriver
+   - Firefox webdriver
       - Go to https://github.com/mozilla/geckodriver/releases
       - Download the latest geckodriver appropriate for your OS e.g. geckodriver-v0.21.0-macos.tar.gz
       - To check the current version of geckodriver type `geckodriver --version`
-  5. Extract zips to your preferred folder, and move the exe files into the folder
-  6. Add that folder (e.g. C:\bin) to Path
+   - Extract zips to your preferred folder, and move the exe files into the folder
+   - Add that folder (e.g. C:\bin) to Path
+
+## Pre- requisites to install Appium Library 
+MacOSX instructions:
+
+http://testnblog.com/appium-up-running-with-robot-framework/
+https://www.mutuallyhuman.com/blog/2017/04/20/webdriveragent-getting-started-with-automated-ios-testing/
+
+This blog is comprehensive for setting up the essentials for appium testing. You can choose to use an emulator or real device (using WebDriverAgent)
+
+## Helful add-ons to run tests
+1. https://github.com/appium/appium-desktop
+Appium desktop is used for locating elements on devices and start/stopping appium servers
+
 
 ## Running the RF script
 1. Open the terminal
